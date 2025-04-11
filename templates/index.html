@@ -3,709 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PiRack Pro - 12U Server Cabinet for Raspberry Pi Zero 2W</title>
+    <title>RackMaster Zero - Ultimate Pi Zero & Pico W Rack System</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .hero-gradient {
-            background: linear-gradient(135deg, #15803d 0%, #0f172a 100%);
-        }
-        .rack-highlight {
-            box-shadow: 0 0 15px rgba(21, 128, 61, 0.4);
-        }
-        .feature-icon-bg {
-            background: rgba(21, 128, 61, 0.1);
-        }
-        .transition-all {
-            transition: all 0.3s ease;
-        }
-        .active-tab {
-            border-bottom: 3px solid #15803d;
-            font-weight: 600;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-        }
-        .floating {
-            animation: float 6s ease-in-out infinite;
-        }
-    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <!-- Header/Navbar -->
-    <header class="bg-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-2">
-                    <i class="fas fa-server text-2xl text-green-700"></i>
-                    <span class="text-xl font-bold">PiRack<span class="text-green-700">Pro</span></span>
-                </div>
-                <nav class="hidden md:block">
-                    <ul class="flex space-x-8">
-                        <li><a href="#features" class="hover:text-green-700 hover:font-medium transition-all">Features</a></li>
-                        <li><a href="#gallery" class="hover:text-green-700 hover:font-medium transition-all">Gallery</a></li>
-                        <li><a href="#specs" class="hover:text-green-700 hover:font-medium transition-all">Specs</a></li>
-                        <li><a href="#faq" class="hover:text-green-700 hover:font-medium transition-all">FAQ</a></li>
-                    </ul>
-                </nav>
-                <div class="flex items-center space-x-4">
-                    <a href="#contact" class="hidden md:block px-4 py-2 bg-green-700 text-white rounded-md hover:bg-green-800 transition-all">Contact Sales</a>
-                    <button class="md:hidden text-gray-600">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
-
+<body class="bg-gray-50">
     <!-- Hero Section -->
-    <section class="hero-gradient pt-32 pb-20 text-white">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-12 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Professional 12U Rack for <span class="text-green-300">Raspberry Pi Zero 2W</span></h1>
-                <p class="text-xl mb-8 text-gray-200">The ultimate solution for organizing and powering your Raspberry Pi Zero 2W clusters for networking, servers, audio, and video applications.</p>
-                <div class="flex space-x-4">
-                    <a href="#preorder" class="px-6 py-3 bg-green-600 hover:bg-green-500 rounded-md font-medium transition-all">Pre-Order Now</a>
-                    <a href="#demo" class="px-6 py-3 border border-white hover:bg-white hover:text-gray-900 rounded-md font-medium transition-all">Request Demo</a>
-                </div>
-                <div class="mt-10 flex items-center space-x-6">
-                    <div class="flex items-center space-x-2">
-                        <i class="fas fa-check-circle text-green-400"></i>
-                        <span>Supports up to 32 Pi Zeros</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <i class="fas fa-check-circle text-green-400"></i>
-                        <span>Professional cooling</span>
-                    </div>
-                </div>
-            </div>
-            <div class="md:w-1/2 flex justify-center relative floating">
-                <img src="https://placehold.co/600x500/0f172a/15803d?text=PiRack+Pro+12U" alt="PiRack Pro 12U Cabinet" class="rounded-lg rack-highlight w-full max-w-md object-cover">
-                <div class="absolute -bottom-5 -right-5 bg-white rounded-full p-4 shadow-lg">
-                    <div class="bg-green-100 text-green-800 rounded-full p-3">
-                        <i class="fas fa-bolt text-2xl"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-20 bg-white">
+    <section class="bg-gradient-to-br from-blue-900 to-black text-white py-20">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Built for <span class="text-green-700">Performance</span></h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Designed specifically for Raspberry Pi Zero 2W clusters with professional features that matter.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="p-6 rounded-lg hover:shadow-xl transition-all">
-                    <div class="feature-icon-bg w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-fan text-green-700 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Active Cooling System</h3>
-                    <p class="text-gray-600">Dual 120mm quiet fans with adjustable speed keep your Pi cluster at optimal temperatures even under heavy loads.</p>
-                </div>
-                <div class="p-6 rounded-lg hover:shadow-xl transition-all">
-                    <div class="feature-icon-bg w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-plug text-green-700 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Integrated Power Distribution</h3>
-                    <p class="text-gray-600">Powered USB hub with individual switches per Pi slot and surge protection for maximum reliability.</p>
-                </div>
-                <div class="p-6 rounded-lg hover:shadow-xl transition-all">
-                    <div class="feature-icon-bg w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-vector-square text-green-700 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Modular Rails</h3>
-                    <p class="text-gray-600">Customizable mounting rails accept both horizontal and vertical Pi configurations for your specific needs.</p>
-                </div>
-                <div class="p-6 rounded-lg hover:shadow-xl transition-all">
-                    <div class="feature-icon-bg w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-network-wired text-green-700 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Cable Management</h3>
-                    <p class="text-gray-600">Specialized cable routing channels with Velcro straps keep your setup clean and professional.</p>
-                </div>
-                <div class="p-6 rounded-lg hover:shadow-xl transition-all">
-                    <div class="feature-icon-bg w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-shield-alt text-green-700 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Lockable Cabinet</h3>
-                    <p class="text-gray-600">Tempered glass front door with lock protects your equipment while allowing visibility of your Pi cluster.</p>
-                </div>
-                <div class="p-6 rounded-lg hover:shadow-xl transition-all">
-                    <div class="feature-icon-bg w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-expand text-green-700 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Expandable Design</h3>
-                    <p class="text-gray-600">Additional 1U shelves available to mix other equipment or expand your Pi cluster as needed.</p>
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Ultimate 3D-Printed Rackmount for Pi Zero & Pico W</h1>
+                <p class="text-xl mb-8">Engineered for performance, scalability, and perfect airflow. Built to empower your edge compute stack.</p>
+                <div class="flex justify-center gap-4">
+                    <button class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-bold">Pre-Order Now</button>
+                    <button class="border border-white hover:bg-white hover:text-black px-8 py-3 rounded-lg font-bold">Download STL Files</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-gray-100">
+    <!-- Features Grid -->
+    <section class="py-20">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Professional <span class="text-green-700">Design</span></h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">See how the PiRack Pro 12U transforms your Raspberry Pi Zero 2W setup.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all">
-                    <img src="https://placehold.co/600x400/0f172a/15803d?text=Front+View" alt="Front View" class="w-full h-64 object-cover">
-                    <div class="p-6 bg-white">
-                        <h3 class="font-bold text-lg mb-2">Front View</h3>
-                        <p class="text-gray-600">Sleek aluminum frame with lockable tempered glass door.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Engineering -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-cogs"></i>
                     </div>
-                </div>
-                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all">
-                    <img src="https://placehold.co/600x400/0f172a/15803d?text=Pi+Cluster" alt="Pi Cluster" class="w-full h-64 object-cover">
-                    <div class="p-6 bg-white">
-                        <h3 class="font-bold text-lg mb-2">Pi Cluster Setup</h3>
-                        <p class="text-gray-600">Compact Pi Zero 2W racks with perfect cable management.</p>
-                    </div>
-                </div>
-                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all">
-                    <img src="https://placehold.co/600x400/0f172a/15803d?text=Rear+View" alt="Rear View" class="w-full h-64 object-cover">
-                    <div class="p-6 bg-white">
-                        <h3 class="font-bold text-lg mb-2">Rear Panel</h3>
-                        <p class="text-gray-600">Clean power and network connections with ample ventilation.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-10 text-center">
-                <a href="#" class="inline-flex items-center text-green-700 font-medium">
-                    View Full Gallery
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Specs Section -->
-    <section id="specs" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Technical <span class="text-green-700">Specifications</span></h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Everything you need to know about the PiRack Pro 12U</p>
-            </div>
-            
-            <div class="flex flex-wrap justify-center mb-10">
-                <div class="w-full md:w-2/3">
-                    <div class="border rounded-lg overflow-hidden">
-                        <div class="flex border-b">
-                            <button class="tab-button py-4 px-6 text-lg font-medium active-tab" onclick="openTab(event, 'details')">Details</button>
-                            <button class="tab-button py-4 px-6 text-lg font-medium" onclick="openTab(event, 'dimensions')">Dimensions</button>
-                            <button class="tab-button py-4 px-6 text-lg font-medium" onclick="openTab(event, 'compatibility')">Compatibility</button>
-                        </div>
-                        
-                        <div id="details" class="tab-content p-6">
-                            <ul class="space-y-4">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Material:</strong> 1.2mm cold-rolled steel frame with aluminum trim</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Front Panel:</strong> Tempered glass door with lock and 60° opening</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Cooling:</strong> Dual 120mm PWM fans (20-30dBA) with removable dust filters</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Power Supply:</strong> Integrated 8-port USB hub (60W total, 2.4A per port)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Mounting:</strong> Adjustable rails for both horizontal and vertical Pi orientations</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Color:</strong> Matte black with green accents</span>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div id="dimensions" class="tab-content p-6 hidden">
-                            <ul class="space-y-4">
-                                <li class="flex items-start">
-                                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>External Dimensions:</strong> 19" W × 22.5" D × 21" H (48.3 × 57.2 × 53.3 cm)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Internal Depth:</strong> 19" (48.3 cm)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Weight:</strong> 35 lbs (15.9 kg) empty, 42 lbs (19 kg) fully loaded</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Rack Unit Height:</strong> 12U standard (1U = 1.75")</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Pi Zero Capacity:</strong> Up to 32 devices (4 per 1U shelf)</span>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div id="compatibility" class="tab-content p-6 hidden">
-                            <ul class="space-y-4">
-                                <li class="flex items-start">
-                                    <i class="fas fa-microchip text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Raspberry Pi Models:</strong> Optimized for Zero 2W, compatible with all Pi Zero variants</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-server text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Standard Rack:</strong> 19" rack compliant (four-post mounting)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-plug text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Power Input:</strong> 100-240V AC, 50/60Hz universal power supply</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-sd-card text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Storage:</strong> Optional 2.5" SSD mounts available (1 per 1U space)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-network-wired text-green-600 mt-1 mr-3"></i>
-                                    <span><strong>Networking:</strong> Optional 8-port gigabit switch mounting compatible (1U)</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-10">
-                <a href="#" class="inline-flex items-center px-6 py-3 bg-green-700 text-white rounded-md hover:bg-green-800 transition-all">
-                    <i class="fas fa-file-pdf mr-2"></i> Download Full Spec Sheet
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Trusted by <span class="text-green-700">Professionals</span></h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">What our customers say about the PiRack Pro system</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 text-xl">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-6">"The PiRack Pro transformed our university's IoT lab. We can now run 30 Pi Zero 2W nodes with perfect cable management and cooling. The students love how professional it looks!"</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-                            <img src="https://placehold.co/100/0f172a/15803d?text=DR" alt="Dr. Roberts" class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Dr. Roberts</h4>
-                            <p class="text-gray-500 text-sm">Professor, Computer Science</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 text-xl">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-6">"As a video production studio, we needed reliable Pi-based monitoring stations. The PiRack Pro keeps everything organized and cooled in our equipment room. The build quality is exceptional."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-                            <img src="https://placehold.co/100/0f172a/15803d?text=SL" alt="Sarah L." class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Sarah L.</h4>
-                            <p class="text-gray-500 text-sm">Technical Director</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 text-xl">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-6">"I run a smart home automation business and needed a professional way to house our Pi Zero controllers. The integrated power and cable management saves hours of setup time per install."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-                            <img src="https://placehold.co/100/0f172a/15803d?text=MC" alt="Marcus C." class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Marcus C.</h4>
-                            <p class="text-gray-500 text-sm">Founder, Smart Homes Inc.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="preorder" class="py-20 hero-gradient text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Organize Your <span class="text-green-300">Pi Cluster</span>?</h2>
-            <p class="text-xl mb-10 max-w-2xl mx-auto">Pre-order now and be among the first to receive the PiRack Pro 12U with early adopter benefits.</p>
-            
-            <div class="max-w-4xl mx-auto bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm rounded-xl p-8 shadow-lg">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-white bg-opacity-5 p-6 rounded-lg border border-white border-opacity-20">
-                        <h3 class="text-xl font-bold mb-3">Starter Edition</h3>
-                        <p class="text-3xl font-bold mb-4">$599<span class="text-lg">/unit</span></p>
-                        <ul class="space-y-3 mb-6 text-left">
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-300 mr-2"></i>
-                                <span>Basic 8-port power supply</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-300 mr-2"></i>
-                                <span>Supports 16 Pi Zero 2W</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-300 mr-2"></i>
-                                <span>Standard cooling</span>
-                            </li>
-                        </ul>
-                        <button class="w-full py-3 bg-white text-gray-900 font-bold rounded-md hover:bg-gray-200 transition-all">Pre-Order Now</button>
-                    </div>
-                    
-                    <div class="bg-green-700 p-6 rounded-lg border border-green-500 shadow-lg transform scale-105">
-                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full">MOST POPULAR</div>
-                        <h3 class="text-xl font-bold mb-3">Professional Edition</h3>
-                        <p class="text-3xl font-bold mb-4">$899<span class="text-lg">/unit</span></p>
-                        <ul class="space-y-3 mb-6 text-left">
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-300 mr-2"></i>
-                                <span>Advanced 16-port power</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-300 mr-2"></i>
-                                <span>Supports 32 Pi Zero 2W</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-300 mr-2"></i>
-                                <span>Enhanced cooling system</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-300 mr-2"></i>
-                                <span>Includes 2x cable kits</span>
-                            </li>
-                        </ul>
-                        <button class="w-full py-3 bg-white text-gray-900 font-bold rounded-md hover:bg-gray-200 transition-all">Pre-Order Now</button>
-                    </div>
-                    
-                    <div class="bg-white bg-opacity-5 p-6 rounded-lg border border-white border-opacity-20">
-                        <h3 class="text-xl font-bold mb-3">Enterprise Bundle</h3>
-                        <p class="text-3xl font-bold mb-4">$1,299<span class="text-lg">/unit</span></p>
-                        <ul class="space-y-3 mb-6 text-left">
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-300 mr-2"></i>
-                                <span>Dual redundant power</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-300 mr-2"></i>
-                                <span>32 Pi capacity + 2x 1U servers</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-300 mr-2"></i>
-                                <span>Remote management</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-300 mr-2"></i>
-                                <span>5-year warranty</span>
-                            </li>
-                        </ul>
-                        <button class="w-full py-3 bg-white text-gray-900 font-bold rounded-md hover:bg-gray-200 transition-all">Contact Sales</button>
-                    </div>
-                </div>
-                
-                <p class="mt-8 text-sm text-gray-300">All pre-orders ship Q4 2023. Early orders receive free installation guides and accessory kit ($99 value).</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked <span class="text-green-700">Questions</span></h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Everything you need to know about the product.</p>
-            </div>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="mb-6 border-b pb-4">
-                    <button class="faq-question flex items-center justify-between w-full text-left font-bold text-lg focus:outline-none">
-                        <span>What's included with the PiRack Pro?</span>
-                        <i class="fas fa-plus text-green-700"></i>
-                    </button>
-                    <div class="faq-answer mt-3 text-gray-600 hidden">
-                        <p>The standard package includes: the 12U rack cabinet with lockable glass door, mounting rails for Pi Zero devices, dual cooling fans with filters, an 8-port powered USB hub, all necessary internal wiring, and assembly hardware. Tools needed: standard screwdriver.</p>
-                    </div>
-                </div>
-                
-                <div class="mb-6 border-b pb-4">
-                    <button class="faq-question flex items-center justify-between w-full text-left font-bold text-lg focus:outline-none">
-                        <span>Can I mix Pi Zero models or use other SBCs?</span>
-                        <i class="fas fa-plus text-green-700"></i>
-                    </button>
-                    <div class="faq-answer mt-3 text-gray-600 hidden">
-                        <p>Yes! The mounting system supports all variants of Raspberry Pi Zero (including original, W, and 2W models). The rails can accommodate other similarly sized single board computers with optional mounting brackets. The power system provides sufficient amperage for most SBC requirements.</p>
-                    </div>
-                </div>
-                
-                <div class="mb-6 border-b pb-4">
-                    <button class="faq-question flex items-center justify-between w-full text-left font-bold text-lg focus:outline-none">
-                        <span>How difficult is assembly?</span>
-                        <i class="fas fa-plus text-green-700"></i>
-                    </button>
-                    <div class="faq-answer mt-3 text-gray-600 hidden">
-                        <p>The PiRack Pro comes 90% pre-assembled. You'll need to attach the door, install the fans (tool-less design), and mount your Pi devices, which takes about 15-30 minutes with our step-by-step guide. Detailed video instructions are provided for all versions.</p>
-                    </div>
-                </div>
-                
-                <div class="mb-6 border-b pb-4">
-                    <button class="faq-question flex items-center justify-between w-full text-left font-bold text-lg focus:outline-none">
-                        <span>What about international shipping and power?</span>
-                        <i class="fas fa-plus text-green-700"></i>
-                    </button>
-                    <div class="faq-answer mt-3 text-gray-600 hidden">
-                        <p>We ship worldwide with calculated shipping rates at checkout. The power supply accepts 100-240V AC at 50/60Hz automatically, and we include country-specific power cables. Note: some electrical certifications may vary by region - check with our sales team for specifics.</p>
-                    </div>
-                </div>
-                
-                <div class="mb-6 border-b pb-4">
-                    <button class="faq-question flex items-center justify-between w-full text-left font-bold text-lg focus:outline-none">
-                        <span>Can I add other 1U equipment to the rack?</span>
-                        <i class="fas fa-plus text-green-700"></i>
-                    </button>
-                    <div class="faq-answer mt-3 text-gray-600 hidden">
-                        <p>Absolutely! The PiRack Pro is a standard 19" rack accepting any 1U equipment. Popular additions include network switches, NAS units, audio interfaces, or small servers. We offer optional blank panels and mounting kits for mixed configurations.</p>
-                    </div>
-                </div>
-                
-                <div class="text-center mt-12">
-                    <p class="text-lg mb-4">Still have questions? We're happy to help!</p>
-                    <a href="#contact" class="inline-flex items-center px-6 py-3 bg-green-700 text-white rounded-md hover:bg-green-800 transition-all">
-                        <i class="fas fa-envelope mr-2"></i> Contact Support
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <div class="max-w-5xl mx-auto">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="md:flex">
-                        <div class="md:w-1/2 bg-green-700 text-white p-10">
-                            <div class="mb-8">
-                                <h3 class="text-2xl font-bold mb-3">Get in Touch</h3>
-                                <p class="text-green-100">Have questions about our PiRack solutions? Our team is ready to help with your project requirements.</p>
-                            </div>
-                            
-                            <div class="space-y-6">
-                                <div class="flex items-start">
-                                    <div class="bg-green-800 p-3 rounded-full mr-4">
-                                        <i class="fas fa-phone-alt text-green-300"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold">Phone</h4>
-                                        <p class="text-green-100">+1 (800) 555-PIRA</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start">
-                                    <div class="bg-green-800 p-3 rounded-full mr-4">
-                                        <i class="fas fa-envelope text-green-300"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold">Email</h4>
-                                        <p class="text-green-100">sales@pirackpro.com</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start">
-                                    <div class="bg-green-800 p-3 rounded-full mr-4">
-                                        <i class="fas fa-map-marker-alt text-green-300"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold">Office</h4>
-                                        <p class="text-green-100">185 Berry Street, Suite 5500<br>San Francisco, CA 94107</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="md:w-1/2 p-10">
-                            <h3 class="text-2xl font-bold mb-8 text-gray-800">Send Us a Message</h3>
-                            <form>
-                                <div class="mb-6">
-                                    <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
-                                    <input type="text" id="name" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
-                                </div>
-                                
-                                <div class="mb-6">
-                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                                    <input type="email" id="email" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
-                                </div>
-                                
-                                <div class="mb-6">
-                                    <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
-                                    <select id="subject" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
-                                        <option>Sales Inquiry</option>
-                                        <option>Technical Support</option>
-                                        <option>Custom Solutions</option>
-                                        <option>Other</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="mb-6">
-                                    <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
-                                    <textarea id="message" rows="4" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
-                                </div>
-                                
-                                <button type="submit" class="w-full bg-green-700 text-white py-3 px-6 rounded-lg hover:bg-green-800 transition-all font-medium">
-                                    Send Message
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
-                <div>
-                    <div class="flex items-center space-x-2 mb-6">
-                        <i class="fas fa-server text-2xl text-green-500"></i>
-                        <span class="text-xl font-bold">PiRack<span class="text-green-500">Pro</span></span>
-                    </div>
-                    <p class="text-gray-400 mb-6">Professional rack solutions for Raspberry Pi clusters and SBC deployments.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-green-500 transition-all"><i class="fab fa-twitter text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-green-500 transition-all"><i class="fab fa-github text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-green-500 transition-all"><i class="fab fa-youtube text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-green-500 transition-all"><i class="fab fa-discord text-xl"></i></a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-6">Products</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">PiRack Pro 12U</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">Accessories</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">Spare Parts</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">Custom Solutions</a></li>
+                    <h3 class="text-xl font-bold mb-4">Engineered for Performance</h3>
+                    <ul class="space-y-2">
+                        <li>✓ Modular rackmount design</li>
+                        <li>✓ High-density compute clusters</li>
+                        <li>✓ Tool-less hot-swap brackets</li>
                     </ul>
                 </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-6">Resources</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">Documentation</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">Installation Guides</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">Case Studies</a></li>
+
+                <!-- Cooling -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Optimal Cooling</h3>
+                    <ul class="space-y-2">
+                        <li>✓ Dual 120mm fan mounts</li>
+                        <li>✓ Peltier cooling support</li>
+                        <li>✓ TPU vibration dampers</li>
                     </ul>
                 </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-6">Company</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">Careers</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">Contact</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-green-500 transition-all">Press</a></li>
+
+                <!-- Materials -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Premium Materials</h3>
+                    <ul class="space-y-2">
+                        <li>✓ Carbon fiber-infused PLA/PETG</li>
+                        <li>✓ Flexible TPU dampers</li>
+                        <li>✓ 24/7 uptime rated</li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 mb-4 md:mb-0">© 2023 PiRack Pro. All rights reserved.</p>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-500 hover:text-green-500 transition-all">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-green-500 transition-all">Terms of Service</a>
-                    <a href="#" class="text-gray-500 hover:text-green-500 transition-all">Cookie Policy</a>
-                </div>
+        </div>
+    </section>
+
+    <!-- Email Capture -->
+    <section class="bg-blue-900 text-white py-16">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-4">Get Early Access & Special Pricing</h2>
+                <p class="text-xl">Join the waitlist for exclusive pre-launch discounts and STL file access.</p>
+            </div>
+            <form id="emailForm" class="flex flex-col md:flex-row gap-4 justify-center">
+                <input type="email" placeholder="Enter your email" class="px-6 py-3 rounded-lg text-black w-full md:w-96" required>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-bold whitespace-nowrap">
+                    Join Waitlist
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Exit Intent Modal -->
+    <div id="exitModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl p-8 max-w-md mx-auto">
+                <h3 class="text-2xl font-bold mb-4">Wait! Don't Miss Out</h3>
+                <p class="mb-6">Get 20% off your pre-order and exclusive access to our design files.</p>
+                <form id="exitEmailForm" class="space-y-4">
+                    <input type="email" placeholder="Your email" class="w-full px-4 py-2 border rounded" required>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+                        Claim Offer
+                    </button>
+                </form>
+                <button onclick="closeModal()" class="mt-4 text-sm text-gray-500 hover:text-gray-700">
+                    No thanks, I'll pass
+                </button>
             </div>
         </div>
-    </footer>
+    </div>
 
     <script>
-        // Tab functionality
-        function openTab(evt, tabName) {
-            const tabContents = document.getElementsByClassName("tab-content");
-            for (let i = 0; i < tabContents.length; i++) {
-                tabContents[i].classList.add("hidden");
+        // Exit intent detection
+        document.addEventListener('mouseleave', function(e) {
+            if (e.clientY <= 0) {
+                document.getElementById('exitModal').classList.remove('hidden');
             }
-            
-            const tabButtons = document.getElementsByClassName("tab-button");
-            for (let i = 0; i < tabButtons.length; i++) {
-                tabButtons[i].classList.remove("active-tab");
-            }
-            
-            document.getElementById(tabName).classList.remove("hidden");
-            evt.currentTarget.classList.add("active-tab");
+        });
+
+        function closeModal() {
+            document.getElementById('exitModal').classList.add('hidden');
         }
-        
-        // FAQ accordion
-        const faqQuestions = document.getElementsByClassName("faq-question");
-        for (let i = 0; i < faqQuestions.length; i++) {
-            faqQuestions[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                const answer = this.nextElementSibling;
-                const icon = this.querySelector("i");
-                
-                if (answer.classList.contains("hidden")) {
-                    answer.classList.remove("hidden");
-                    icon.classList.remove("fa-plus");
-                    icon.classList.add("fa-minus");
-                } else {
-                    answer.classList.add("hidden");
-                    icon.classList.remove("fa-minus");
-                    icon.classList.add("fa-plus");
-                }
-            });
-        }
-        
-        // Mobile menu toggle (would need actual implementation)
-        // document.querySelector(".mobile-menu-button").addEventListener("click", function() {
-        //   document.querySelector(".mobile-menu").classList.toggle("hidden");
-        // });
+
+        // Form submissions
+        document.getElementById('emailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your email capture logic here
+            alert('Thanks for joining the waitlist!');
+        });
+
+        document.getElementById('exitEmailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your exit intent email capture logic here
+            alert('Your discount code has been sent!');
+            closeModal();
+        });
     </script>
-<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=S-Dreamer/pirackpro" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</body>
 </html>

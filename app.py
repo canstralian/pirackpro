@@ -24,6 +24,13 @@ def load_user(user_id):
 def home():
     return render_template('index.html')
 
+@app.route('/signup', methods=['POST'])
+def signup():
+    email = request.form.get('email')
+    # Here you would typically save the email to a database
+    # For now, we'll just return a success message
+    return {'success': True, 'message': 'Thank you for signing up!'}
+
 @app.route('/login')
 def login():
     if current_user.is_authenticated:
