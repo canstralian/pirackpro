@@ -24,6 +24,31 @@ def load_user(user_id):
 def home():
     return render_template('index.html')
 
+# Funnel Routes
+@app.route('/squeeze')
+def squeeze():
+    return render_template('squeeze.html')
+
+@app.route('/sales')
+def sales():
+    return render_template('sales.html')
+
+@app.route('/oto1')
+def oto1():
+    return render_template('oto1.html')
+
+@app.route('/oto2')
+def oto2():
+    return render_template('oto2.html')
+
+@app.route('/checkout')
+def checkout():
+    return render_template('checkout.html')
+
+@app.route('/thank-you')
+def thank_you():
+    return render_template('thank-you.html')
+
 @app.route('/signup', methods=['POST'])
 def signup():
     email = request.form.get('email')
