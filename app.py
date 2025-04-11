@@ -45,8 +45,12 @@ def oto2():
 def checkout():
     return render_template('checkout.html')
 
-@app.route('/thank-you')
+@app.route('/thank-you', methods=['GET', 'POST'])
 def thank_you():
+    if request.method == 'POST':
+        # Here you would process the order
+        # For now, just render the thank you page
+        pass
     return render_template('thank-you.html')
 
 @app.route('/signup', methods=['POST'])
