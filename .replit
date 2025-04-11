@@ -4,10 +4,19 @@ modules = ["web", "python-3.12", "ruff"]
 channel = "stable-24_05"
 
 [workflows]
-runButton = "Run Server"
+runButton = "Run"
 
 [[workflows.workflow]]
 name = "Run Server"
+author = 25868489
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python app.py"
+
+[[workflows.workflow]]
+name = "Run"
 author = 25868489
 mode = "sequential"
 
