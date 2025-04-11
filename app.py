@@ -25,33 +25,33 @@ def home():
     return render_template('index.html')
 
 # Funnel Routes
-@app.route('/squeeze')
+@app.route('/funnel/squeeze')
 def squeeze():
-    return render_template('squeeze.html')
+    return render_template('funnel/squeeze.html')
 
-@app.route('/sales')
+@app.route('/funnel/sales')
 def sales():
-    return render_template('sales.html')
+    return render_template('funnel/sales.html')
 
-@app.route('/oto1')
+@app.route('/funnel/oto1')
 def oto1():
-    return render_template('oto1.html')
+    return render_template('funnel/oto1.html')
 
-@app.route('/oto2')
+@app.route('/funnel/oto2')
 def oto2():
-    return render_template('oto2.html')
+    return render_template('funnel/oto2.html')
 
-@app.route('/checkout')
+@app.route('/funnel/checkout')
 def checkout():
-    return render_template('checkout.html')
+    return render_template('funnel/checkout.html')
 
-@app.route('/thank-you', methods=['GET', 'POST'])
+@app.route('/funnel/thank-you', methods=['GET', 'POST'])
 def thank_you():
     if request.method == 'POST':
         # Here you would process the order
         # For now, just render the thank you page
         pass
-    return render_template('thank-you.html')
+    return render_template('funnel/thank-you.html')
 
 @app.route('/signup', methods=['POST'])
 def signup():
