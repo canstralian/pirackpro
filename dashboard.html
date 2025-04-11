@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiRack Pro Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-server text-green-700 text-2xl"></i>
+                    <span class="ml-2 text-xl font-bold">PiRack<span class="text-green-700">Pro</span></span>
+                </div>
+                <div class="flex items-center">
+                    <span class="mr-4">Welcome, {{ current_user.username }}</span>
+                    <a href="/logout" class="text-red-600 hover:text-red-800">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-lg font-semibold mb-4">Cluster Status</h3>
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <span>Active Nodes:</span>
+                        <span class="text-green-600">32/32</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Temperature:</span>
+                        <span class="text-yellow-600">45°C</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Power Usage:</span>
+                        <span>120W</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-lg font-semibold mb-4">Cooling System</h3>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Fan Speed</label>
+                        <input type="range" class="w-full" min="0" max="100" value="60">
+                    </div>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                        Apply Settings
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-lg font-semibold mb-4">Quick Actions</h3>
+                <div class="space-y-2">
+                    <button class="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                        Restart Cluster
+                    </button>
+                    <button class="w-full bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">
+                        Update Firmware
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
